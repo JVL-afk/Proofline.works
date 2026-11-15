@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#f4f2eb" />
     <meta name="robots" content="noindex, nofollow" />
-    <title>Proofline Works — End-to-end AI workflows, built around your process</title>
-    <meta name="description" content="Proofline Works designs custom, end-to-end AI workflows around real business processes, with a personalized demo before a build is scoped." />
+    <title>Proofline Works — AI workflows, demonstrated on your process</title>
+    <meta name="description" content="See anonymized workflow-demo concepts, human approval points, and a transparent scenario model for custom AI automation built around your operations." />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Proofline Works" />
-    <meta property="og:title" content="Proofline Works — End-to-end AI workflows, built around your process" />
-    <meta property="og:description" content="Start with the workflow. See a personalized demo shaped around your operation before discussing a custom build." />
+    <meta property="og:title" content="Proofline Works — AI workflows, demonstrated on your process" />
+    <meta property="og:description" content="Start with your workflow. See a tailored demo concept, visible human checkpoints, and an impact model based on explicit assumptions." />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="Proofline Works — End-to-end AI workflows, built around your process" />
+    <meta name="twitter:title" content="Proofline Works — AI workflows, demonstrated on your process" />
     <meta name="twitter:description" content="Custom workflow automation, designed around the way your operation runs." />
-    <!-- Add canonical and absolute social-preview URLs after the real public domain and share image are chosen. Remove the temporary noindex directive before launch. -->
+    <!-- Add canonical and absolute social-preview URLs after the domain points to this site and a launch image is approved. Remove the temporary noindex directive before launch. -->
     <link rel="icon" type="image/svg+xml" href="/proofline-mark.svg" />
   </head>
   <body>
@@ -35,9 +35,9 @@
           <span></span><span></span>
         </button>
         <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
-          <a href="#approach">Approach</a>
-          <a href="#focus-areas">Focus areas</a>
-          <a href="#responsible-ai">How we build</a>
+          <a href="#demos">Examples</a>
+          <a href="#impact">Human + AI</a>
+          <a href="#approach">How it works</a>
           <a class="nav-cta" href="#personalized-demo">Explore a tailored demo <span aria-hidden="true">↗</span></a>
         </nav>
       </div>
@@ -155,21 +155,157 @@
         <p class="focus-footnote"><span aria-hidden="true">↗</span> A different industry? If your process crosses teams, tools, and repeated decisions, it may still be worth mapping.</p>
       </section>
 
-      <section class="demo-section" id="personalized-demo" aria-labelledby="demo-title">
-        <div class="demo-section-inner section-shell">
-          <div class="demo-stamp" aria-hidden="true"><span>PW</span><i></i><small>MADE TO<br />YOUR FLOW</small></div>
-          <div class="demo-copy"><p class="section-index section-index-light">03 <span>/</span> NOT A GENERIC TOUR</p><h2 id="demo-title">Your workflow.<br /><em>Your demo.</em></h2><p class="demo-lede">When you get in touch, the first step is a fully personalized demo of a solution shaped around the way your company works.</p><p class="demo-support">We start with one process: how it begins, who touches it, what gets handed off, and where a person needs to decide. Then we make the idea tangible before discussing a build.</p><a class="button button-light" href="#approach">See the steps <span aria-hidden="true">↘</span></a></div>
-          <div class="demo-steps" aria-label="What shapes a personalized demo">
-            <div class="demo-step"><span>01</span><div><strong>Bring one workflow</strong><p>A description is enough to begin. No sensitive documents needed.</p></div></div>
-            <div class="demo-step"><span>02</span><div><strong>Map the real handoffs</strong><p>We clarify systems, exceptions, language, and the decisions that stay human.</p></div></div>
-            <div class="demo-step"><span>03</span><div><strong>See the tailored concept</strong><p>A synthetic, company-specific walkthrough makes the proposed flow easier to judge.</p></div></div>
+      <section class="showcase-section" id="demos" aria-labelledby="showcase-title">
+        <div class="showcase-inner section-shell">
+          <div class="showcase-heading">
+            <div><p class="section-index">03 <span>/</span> A DEMO YOU CAN SEE</p><h2 id="showcase-title">Not a generic tour.<br /><em>A view of the workflow.</em></h2></div>
+            <p class="showcase-intro">These anonymized concepts show the kind of tailored walkthrough a prospect can receive: the work made visible, AI suggestions separated from human approval, and exceptions left in the open.</p>
+          </div>
+
+          <div class="showcase-grid">
+            <article class="showcase-card" data-reveal>
+              <div class="warehouse-preview" aria-label="Illustrative bonded-warehouse status dashboard with synthetic information">
+                <div class="warehouse-topbar"><div class="warehouse-brand"><span class="warehouse-mark" aria-hidden="true">PW</span><span><b>WAREHOUSE STATUS</b><small>Bonded site · concept view</small></span></div><span class="synthetic-badge"><i></i> SYNTHETIC DATA</span></div>
+                <div class="warehouse-toolbar"><span class="warehouse-search"><span aria-hidden="true">⌕</span> Find location or reference</span><span class="warehouse-toolbar-note">DOCUMENT CONTEXT · NOT LIVE</span></div>
+                <div class="warehouse-filter-row"><span class="warehouse-filter-label">STATUS LENS</span><div class="warehouse-filters" role="group" aria-label="Filter sample warehouse zones by status">
+                  <button class="warehouse-filter is-active" type="button" data-filter="all" aria-pressed="true">All</button>
+                  <button class="warehouse-filter" type="button" data-filter="bonded" aria-pressed="false">Under bond</button>
+                  <button class="warehouse-filter" type="button" data-filter="released" aria-pressed="false">Released</button>
+                  <button class="warehouse-filter" type="button" data-filter="hold" aria-pressed="false">On hold</button>
+                </div></div>
+                <div class="warehouse-layout">
+                  <div class="warehouse-map-panel">
+                    <div class="warehouse-map-heading"><span>ILLUSTRATIVE FLOOR VIEW</span><span>SELECT A ZONE</span></div>
+                    <div class="warehouse-zone-grid" id="warehouse-zone-grid" role="group" aria-label="Select an illustrative warehouse zone">
+                      <button class="warehouse-zone zone-spirits is-selected" type="button" data-zone="spirits" data-status="bonded" aria-pressed="true" aria-label="SP-01 spirits storage, under bond">
+                        <span class="zone-code">SP-01</span><strong>Spirits</strong><span class="zone-state"><i></i>Under bond</span>
+                      </button>
+                      <button class="warehouse-zone zone-wine" type="button" data-zone="wine" data-status="bonded" aria-pressed="false" aria-label="WN-01 wine storage, under bond">
+                        <span class="zone-code">WN-01</span><strong>Wine</strong><span class="zone-state"><i></i>Under bond</span>
+                      </button>
+                      <button class="warehouse-zone zone-beer" type="button" data-zone="beer" data-status="released" aria-pressed="false" aria-label="BR-01 beer storage, released">
+                        <span class="zone-code">BR-01</span><strong>Beer</strong><span class="zone-state"><i></i>Released</span>
+                      </button>
+                      <button class="warehouse-zone zone-cold" type="button" data-zone="cold" data-status="hold" aria-pressed="false" aria-label="CL-01 cold chain storage, on hold">
+                        <span class="zone-code">CL-01</span><strong>Cold chain</strong><span class="zone-state"><i></i>On hold</span>
+                      </button>
+                      <button class="warehouse-zone zone-customs" type="button" data-zone="customs" data-status="hold" aria-pressed="false" aria-label="QR-01 customs review area, on hold">
+                        <span class="zone-code">QR-01</span><strong>Review bay</strong><span class="zone-state"><i></i>On hold</span>
+                      </button>
+                      <button class="warehouse-zone zone-inbound" type="button" data-zone="inbound" data-status="released" aria-pressed="false" aria-label="DK-01 inbound dock, released">
+                        <span class="zone-code">DK-01</span><strong>Inbound dock</strong><span class="zone-state"><i></i>Released</span>
+                      </button>
+                      <button class="warehouse-zone zone-outbound" type="button" data-zone="outbound" data-status="released" aria-pressed="false" aria-label="DK-02 outbound staging, released">
+                        <span class="zone-code">DK-02</span><strong>Outbound</strong><span class="zone-state"><i></i>Released</span>
+                      </button>
+                      <button class="warehouse-zone zone-repack" type="button" data-zone="repack" data-status="bonded" aria-pressed="false" aria-label="RT-01 repacking area, under bond">
+                        <span class="zone-code">RT-01</span><strong>Repacking</strong><span class="zone-state"><i></i>Under bond</span>
+                      </button>
+                    </div>
+                  </div>
+                  <aside class="warehouse-detail" id="warehouse-detail" aria-live="polite" aria-atomic="true">
+                    <span class="warehouse-detail-kicker">SELECTED AREA · EXAMPLE</span>
+                    <span class="warehouse-detail-status" id="warehouse-detail-status">UNDER BOND</span>
+                    <h3 id="warehouse-detail-title">SP-01 · Spirits</h3>
+                    <p id="warehouse-detail-copy">The concept brings a zone and its document context into one view for a reviewer.</p>
+                    <div class="warehouse-human-gate"><span class="human-gate-icon" aria-hidden="true">✓</span><div><b>HUMAN GATE</b><span>Hold and release decisions remain with the responsible person.</span></div></div>
+                  </aside>
+                </div>
+                <div class="warehouse-preview-footer"><span><i></i> Illustrative floor view · no live ledger or warehouse connection</span><span>PW / CONCEPT 01</span></div>
+              </div>
+              <div class="showcase-card-copy">
+                <p class="showcase-card-kicker">01 / BONDED WAREHOUSE CONCEPT</p>
+                <h3>See the hold before it becomes a hunt.</h3>
+                <p>A status-aware floor view can bring location, duty state, document context, and exception review together. The display is a concept—not the source demo’s live screen.</p>
+                <div class="showcase-flow"><span>Zone</span><i aria-hidden="true">→</i><span>Status + records</span><i aria-hidden="true">→</i><span>Human resolves</span></div>
+                <p class="showcase-disclaimer">Illustrative reconstruction based on a concept workflow. No live system, client operation, or measured result is shown.</p>
+              </div>
+            </article>
+
+            <article class="showcase-card" data-reveal>
+              <figure class="port-preview">
+                <div class="port-preview-label"><span>PORT DESK · CONCEPT 02</span><span>ANONYMIZED MAP VIEW</span></div>
+                <img src="/manus-storage/port-map-concept-clean_6c91e6b7.webp" alt="An anonymized map crop from a port-operations prototype, showing Rotterdam-area markers, port labels, and illustrative map-pin sizing." loading="lazy" decoding="async" />
+                <figcaption>Map view: Leaflet; tiles © Esri, HERE, Garmin; © OpenStreetMap contributors. This cropped prototype map is illustrative; marker labels are not Proofline client results.</figcaption>
+              </figure>
+              <div class="showcase-card-copy">
+                <p class="showcase-card-kicker">02 / PORT OPERATIONS CONCEPT</p>
+                <h3>From a message to a shared port view.</h3>
+                <p>An inbound shipment note can be parsed into key details, drafted as a route/map suggestion, and confirmed by a person before it joins the operational board.</p>
+                <div class="showcase-flow"><span>Inbound email</span><i aria-hidden="true">→</i><span>AI drafts a pin</span><i aria-hidden="true">→</i><span>Person confirms</span></div>
+                <p class="showcase-disclaimer">The crop excludes the prototype’s branded header, inbox, summary metrics, and ship-detail popups. It is an anonymized prototype image, not a client deployment or performance claim.</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="personalized-demo-band" id="personalized-demo">
+            <div><p class="section-index">YOUR WORKFLOW / NEXT</p><h3>When you reach out, the demo starts with <em>your process.</em></h3><p>We map the people, systems, handoffs, exceptions, and decisions that matter—then shape a fully personalized walkthrough before discussing a build.</p></div>
+            <a class="button button-primary" href="#approach">See how the work is shaped <span aria-hidden="true">↘</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="impact-section" id="impact" aria-labelledby="impact-title">
+        <div class="impact-orbit impact-orbit-one" aria-hidden="true"></div><div class="impact-orbit impact-orbit-two" aria-hidden="true"></div>
+        <div class="impact-inner section-shell">
+          <div class="impact-heading">
+            <p class="section-index section-index-light">04 <span>/</span> PEOPLE + AI IN SYMPHONY</p>
+            <h2 id="impact-title">AI handles the repeat.<br /><em>People keep the call.</em></h2>
+            <p>Move routine information work forward. Keep the judgment, approvals, and accountability visible.</p>
+          </div>
+
+          <div class="impact-main">
+            <div class="impact-diagram" data-reveal>
+              <div class="impact-panel-heading"><span>FROM FIRST SIGNAL TO ACCOUNTABLE ACTION</span><span class="impact-panel-status"><i></i> HUMAN CHECKPOINT INCLUDED</span></div>
+              <div class="impact-path" role="list" aria-label="Illustrative AI-enabled workflow with human approval">
+                <article class="impact-node impact-node-input" role="listitem"><span>01 / INTAKE</span><strong>Message<br />or document</strong><small>Original context retained</small></article>
+                <div class="impact-connector" aria-hidden="true"><span></span></div>
+                <article class="impact-node impact-node-ai" role="listitem"><span>02 / AI PREPARES</span><strong>Extract · classify<br />draft · suggest</strong><small>Unclear details stay flagged</small></article>
+                <div class="impact-connector impact-connector-gate" aria-hidden="true"><span></span></div>
+                <article class="impact-node impact-node-human" role="listitem"><span>03 / HUMAN GATE</span><strong>Check · approve<br />resolve exception</strong><small>A person owns the decision</small></article>
+                <div class="impact-connector" aria-hidden="true"><span></span></div>
+                <article class="impact-node impact-node-action" role="listitem"><span>04 / NEXT ACTION</span><strong>Route to the<br />right owner</strong><small>Status remains visible</small></article>
+              </div>
+              <div class="impact-responsibilities">
+                <article><span class="responsibility-mark responsibility-ai" aria-hidden="true">A</span><div><b>AI MAY PREPARE</b><p>Intake, extraction, categorization, draft suggestions, and proposed routing.</p></div></article>
+                <article><span class="responsibility-mark responsibility-human" aria-hidden="true">H</span><div><b>PEOPLE REMAIN ACCOUNTABLE</b><p>Exceptions, sensitive approvals, commitments to customers, and final release decisions.</p></div></article>
+              </div>
+              <p class="impact-diagram-note">Illustrative future-state flow. The exact boundary is agreed for each workflow.</p>
+            </div>
+
+            <section class="impact-model" aria-labelledby="impact-model-title" data-reveal>
+              <div class="impact-model-top"><div><p class="impact-model-kicker">A TRANSPARENT SCENARIO</p><h3 id="impact-model-title">Model the capacity.<br /><em>Not a promise.</em></h3></div><span class="model-chip">EDIT THE ASSUMPTIONS</span></div>
+              <p class="impact-model-intro">Starting values below are fictional examples, not Proofline results or industry benchmarks. Change them to explore your own process; nothing is saved or sent.</p>
+              <div class="impact-input-grid">
+                <label class="impact-input-label">Eligible work items / month<input id="impact-volume" type="number" inputmode="numeric" min="0" max="100000" step="50" value="500" /></label>
+                <label class="impact-input-label">Current handling / item (minutes)<input id="impact-manual" type="number" inputmode="decimal" min="0" max="1440" step="1" value="15" /></label>
+                <label class="impact-input-label">Assisted handling, including review (minutes)<input id="impact-assisted" type="number" inputmode="decimal" min="0" max="1440" step="1" value="5" /></label>
+                <label class="impact-input-label">Loaded labor cost / hour (optional)<span class="impact-currency-field"><input id="impact-hourly" type="number" inputmode="decimal" min="0" max="10000" step="1" value="35" /><select id="impact-currency" aria-label="Currency for capacity value"><option value="EUR" selected>EUR</option><option value="USD">USD</option></select></span></label>
+              </div>
+              <div class="impact-adoption-grid">
+                <label class="impact-slider-label"><span>Assumed case share at month 3 <output id="impact-month3-share" for="impact-month3">30%</output></span><input id="impact-month3" type="range" min="0" max="100" step="5" value="30" /></label>
+                <label class="impact-slider-label"><span>Assumed case share at month 6 <output id="impact-month6-share" for="impact-month6">60%</output></span><input id="impact-month6" type="range" min="0" max="100" step="5" value="60" /></label>
+              </div>
+              <p class="impact-model-status" id="impact-model-status" aria-live="polite">Assumption-based scenario only. Human review is included in assisted handling time.</p>
+              <div class="impact-results" aria-live="polite" aria-atomic="true">
+                <article class="impact-result-card"><span>MONTH 3 · RUN-RATE</span><strong id="impact-month3-hours">25.0 h / mo</strong><small id="impact-month3-value">€875 / mo potential capacity value</small></article>
+                <article class="impact-result-card impact-result-card-lime"><span>MONTH 6 · RUN-RATE</span><strong id="impact-month6-hours">50.0 h / mo</strong><small id="impact-month6-value">€1,750 / mo potential capacity value</small></article>
+              </div>
+              <p class="impact-formula">Formula: monthly items × (manual minutes − assisted minutes, including review) × assumed case share ÷ 60. Values are monthly run-rates at each scenario point—not cumulative totals.</p>
+              <p class="impact-model-caveat">Capacity value is not cash saved. The model excludes build and operating cost, exceptions, case mix, rollout effort, and other factors. Real impact needs an agreed baseline and a measured pilot.</p>
+            </section>
+          </div>
+
+          <div class="impact-horizons" data-reveal>
+            <article class="impact-horizon"><span>0–3 MONTHS · MEASURE</span><h3>Baseline → controlled pilot</h3><p>Agree the starting touch time, quality, exception rate, rework, and human sign-off. Compare the pilot to that baseline; timing depends on scope.</p></article>
+            <article class="impact-horizon"><span>3–6 MONTHS · EARN THE NEXT STEP</span><h3>Evidence → refine or expand</h3><p>Keep, change, or extend a workflow only when quality and control hold. Measure where released capacity goes; do not assume it becomes a cash saving.</p></article>
           </div>
         </div>
       </section>
 
       <section class="approach-section section-shell" id="approach" aria-labelledby="approach-title">
         <div class="section-heading approach-heading">
-          <div><p class="section-index">04 <span>/</span> FROM PROCESS TO PRACTICE</p><h2 id="approach-title">Thought through.<br /><em>Built to fit.</em></h2></div>
+          <div><p class="section-index">05 <span>/</span> FROM PROCESS TO PRACTICE</p><h2 id="approach-title">Thought through.<br /><em>Built to fit.</em></h2></div>
           <p class="section-heading-note">A clear path from understanding the work to handing over a workflow the team can operate.</p>
         </div>
         <div class="approach-track">
@@ -183,7 +319,7 @@
 
       <section class="principles-section" id="responsible-ai" aria-labelledby="principles-title">
         <div class="principles-inner section-shell">
-          <div class="principles-copy"><p class="section-index">05 <span>/</span> BUILT WITH INTENTION</p><h2 id="principles-title">Useful automation.<br /><em>Clear accountability.</em></h2><p>AI can help move information. It shouldn’t obscure who is responsible for the next decision.</p><a class="text-link" href="#workflow-principles">Our working principles <span aria-hidden="true">↓</span></a></div>
+          <div class="principles-copy"><p class="section-index">06 <span>/</span> BUILT WITH INTENTION</p><h2 id="principles-title">Useful automation.<br /><em>Clear accountability.</em></h2><p>AI can help move information. It shouldn’t obscure who is responsible for the next decision.</p><a class="text-link" href="#workflow-principles">Our working principles <span aria-hidden="true">↓</span></a></div>
           <div class="principles-list" id="workflow-principles">
             <article><span>01</span><div><h3>Fit the process—not the trend.</h3><p>Start with the work and its constraints. Use AI only where it adds a useful capability.</p></div></article>
             <article><span>02</span><div><h3>Keep people in the loop.</h3><p>Important decisions, approvals, and exceptions stay visible and accountable to people.</p></div></article>
@@ -195,17 +331,16 @@
 
       <section class="final-section section-shell" id="next-step" aria-labelledby="final-title">
         <div class="final-mark" aria-hidden="true"><svg viewBox="0 0 44 44" fill="none"><path d="M10 33V11h8.2c5.3 0 8.1 2.2 8.1 6.1s-2.8 6.2-8.1 6.2H10M24.5 33l6.1-21 5.5 21 5.3-16.7" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="33" r="2.2" fill="#d9f36a"/></svg></div>
-        <p class="section-index">06 <span>/</span> THE NEXT STEP</p>
+        <p class="section-index">07 <span>/</span> THE NEXT STEP</p>
         <h2 id="final-title">Bring the messy middle.</h2>
         <p class="final-copy">Start with a workflow that takes too much chasing, copying, or coordination. We’ll make a tailored demo concept around it—then you can decide if it deserves a build.</p>
         <div class="final-actions"><a class="button button-primary" href="#personalized-demo">Explore the tailored-demo approach <span aria-hidden="true">↗</span></a><a class="text-link" href="#top">Back to the overview <span aria-hidden="true">↑</span></a></div>
-        <p class="launch-note"><span class="launch-note-dot" aria-hidden="true"></span> Contact destination and final call to action will be added with you before launch.</p>
       </section>
     </main>
 
     <footer class="site-footer">
       <div class="footer-inner"><a class="brand footer-brand" href="#top" aria-label="Proofline Works — back to top"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 44 44" fill="none"><path d="M10 33V11h8.2c5.3 0 8.1 2.2 8.1 6.1s-2.8 6.2-8.1 6.2H10M24.5 33l6.1-21 5.5 21 5.3-16.7" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/><circle cx="10" cy="33" r="2.2" fill="#d9f36a"/></svg></span><span class="brand-wordmark"><span>Proofline</span><strong>Works</strong></span></a><p>Workflow systems, shaped around real work.</p><span class="footer-location">Working from Romania · Europe &amp; U.S.</span></div>
-      <div class="footer-bottom"><span>Proofline Works</span><span>Initial website preview · examples and contact route to be finalized</span><a href="#top">Back to top ↑</a></div>
+      <div class="footer-bottom"><span>Proofline Works</span><span>Illustrative workflow concepts · human review stays visible</span><a href="#top">Back to top ↑</a></div>
     </footer>
     <script type="module" src="/src/site.ts"></script>
   </body>
