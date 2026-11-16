@@ -36,7 +36,7 @@
         </button>
         <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
           <a href="#demos">Examples</a>
-          <a href="#impact">Human + AI</a>
+          <a href="#impact">Business case</a>
           <a href="#approach">How it works</a>
           <a class="nav-cta" href="#personalized-demo">Explore a tailored demo <span aria-hidden="true">↗</span></a>
         </nav>
@@ -155,150 +155,227 @@
         <p class="focus-footnote"><span aria-hidden="true">↗</span> A different industry? If your process crosses teams, tools, and repeated decisions, it may still be worth mapping.</p>
       </section>
 
-      <section class="showcase-section" id="demos" aria-labelledby="showcase-title">
-        <div class="showcase-inner section-shell">
-          <div class="showcase-heading">
-            <div><p class="section-index">03 <span>/</span> A DEMO YOU CAN SEE</p><h2 id="showcase-title">Not a generic tour.<br /><em>A view of the workflow.</em></h2></div>
-            <p class="showcase-intro">These anonymized concepts show the kind of tailored walkthrough a prospect can receive: the work made visible, AI suggestions separated from human approval, and exceptions left in the open.</p>
-          </div>
+      <section class="demo-section demo-amsterdam" id="demos" aria-labelledby="amsterdam-title">
+        <div class="demo-atmosphere" aria-hidden="true"><span class="demo-ghost">01</span></div>
+        <div class="demo-inner section-shell">
+          <header class="demo-heading">
+            <div class="demo-heading-main">
+              <p class="section-index section-index-dark">03 <span>/</span> EXAMPLE BUILDS</p>
+              <div class="demo-tags"><span class="demo-tag">DEMO 01</span><span class="demo-tag demo-tag-quiet">BONDED WAREHOUSE · EXCISE &amp; CUSTOMS</span></div>
+              <h2 id="amsterdam-title">One bonded floor.<br /><em>Every status in view.</em></h2>
+            </div>
+            <div class="demo-heading-side">
+              <p>Amsterdam Freight is a working concept for a bonded warehouse. Excise, duty and Douane status live on one floor plan — from the hall overview down to the pallet lot behind a hold.</p>
+              <div class="demo-meta"><span>3 views</span><span>Synthetic data</span><span>Built by the Proofline Works team</span></div>
+            </div>
+          </header>
 
-          <div class="showcase-grid">
-            <article class="showcase-card" data-reveal>
-              <div class="warehouse-preview" aria-label="Illustrative bonded-warehouse status dashboard with synthetic information">
-                <div class="warehouse-topbar"><div class="warehouse-brand"><span class="warehouse-mark" aria-hidden="true">PW</span><span><b>WAREHOUSE STATUS</b><small>Bonded site · concept view</small></span></div><span class="synthetic-badge"><i></i> SYNTHETIC DATA</span></div>
-                <div class="warehouse-toolbar"><span class="warehouse-search"><span aria-hidden="true">⌕</span> Find location or reference</span><span class="warehouse-toolbar-note">DOCUMENT CONTEXT · NOT LIVE</span></div>
-                <div class="warehouse-filter-row"><span class="warehouse-filter-label">STATUS LENS</span><div class="warehouse-filters" role="group" aria-label="Filter sample warehouse zones by status">
-                  <button class="warehouse-filter is-active" type="button" data-filter="all" aria-pressed="true">All</button>
-                  <button class="warehouse-filter" type="button" data-filter="bonded" aria-pressed="false">Under bond</button>
-                  <button class="warehouse-filter" type="button" data-filter="released" aria-pressed="false">Released</button>
-                  <button class="warehouse-filter" type="button" data-filter="hold" aria-pressed="false">On hold</button>
-                </div></div>
-                <div class="warehouse-layout">
-                  <div class="warehouse-map-panel">
-                    <div class="warehouse-map-heading"><span>ILLUSTRATIVE FLOOR VIEW</span><span>SELECT A ZONE</span></div>
-                    <div class="warehouse-zone-grid" id="warehouse-zone-grid" role="group" aria-label="Select an illustrative warehouse zone">
-                      <button class="warehouse-zone zone-spirits is-selected" type="button" data-zone="spirits" data-status="bonded" aria-pressed="true" aria-label="SP-01 spirits storage, under bond">
-                        <span class="zone-code">SP-01</span><strong>Spirits</strong><span class="zone-state"><i></i>Under bond</span>
-                      </button>
-                      <button class="warehouse-zone zone-wine" type="button" data-zone="wine" data-status="bonded" aria-pressed="false" aria-label="WN-01 wine storage, under bond">
-                        <span class="zone-code">WN-01</span><strong>Wine</strong><span class="zone-state"><i></i>Under bond</span>
-                      </button>
-                      <button class="warehouse-zone zone-beer" type="button" data-zone="beer" data-status="released" aria-pressed="false" aria-label="BR-01 beer storage, released">
-                        <span class="zone-code">BR-01</span><strong>Beer</strong><span class="zone-state"><i></i>Released</span>
-                      </button>
-                      <button class="warehouse-zone zone-cold" type="button" data-zone="cold" data-status="hold" aria-pressed="false" aria-label="CL-01 cold chain storage, on hold">
-                        <span class="zone-code">CL-01</span><strong>Cold chain</strong><span class="zone-state"><i></i>On hold</span>
-                      </button>
-                      <button class="warehouse-zone zone-customs" type="button" data-zone="customs" data-status="hold" aria-pressed="false" aria-label="QR-01 customs review area, on hold">
-                        <span class="zone-code">QR-01</span><strong>Review bay</strong><span class="zone-state"><i></i>On hold</span>
-                      </button>
-                      <button class="warehouse-zone zone-inbound" type="button" data-zone="inbound" data-status="released" aria-pressed="false" aria-label="DK-01 inbound dock, released">
-                        <span class="zone-code">DK-01</span><strong>Inbound dock</strong><span class="zone-state"><i></i>Released</span>
-                      </button>
-                      <button class="warehouse-zone zone-outbound" type="button" data-zone="outbound" data-status="released" aria-pressed="false" aria-label="DK-02 outbound staging, released">
-                        <span class="zone-code">DK-02</span><strong>Outbound</strong><span class="zone-state"><i></i>Released</span>
-                      </button>
-                      <button class="warehouse-zone zone-repack" type="button" data-zone="repack" data-status="bonded" aria-pressed="false" aria-label="RT-01 repacking area, under bond">
-                        <span class="zone-code">RT-01</span><strong>Repacking</strong><span class="zone-state"><i></i>Under bond</span>
-                      </button>
-                    </div>
-                  </div>
-                  <aside class="warehouse-detail" id="warehouse-detail" aria-live="polite" aria-atomic="true">
-                    <span class="warehouse-detail-kicker">SELECTED AREA · EXAMPLE</span>
-                    <span class="warehouse-detail-status" id="warehouse-detail-status">UNDER BOND</span>
-                    <h3 id="warehouse-detail-title">SP-01 · Spirits</h3>
-                    <p id="warehouse-detail-copy">The concept brings a zone and its document context into one view for a reviewer.</p>
-                    <div class="warehouse-human-gate"><span class="human-gate-icon" aria-hidden="true">✓</span><div><b>HUMAN GATE</b><span>Hold and release decisions remain with the responsible person.</span></div></div>
-                  </aside>
+          <div class="demo-reel">
+            <figure class="demo-shot demo-shot-lead" data-reveal>
+              <div class="shot-frame">
+                <div class="shot-bar"><span class="shot-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="shot-bar-label">AMSTERDAM FREIGHT · HALL OVERVIEW</span><span class="shot-bar-tag">VIEW 01</span></div>
+                <img src="/examples/amsterdam-01-floor.png" width="1897" height="827" alt="Amsterdam Freight bonded-warehouse dashboard: four KPI cards for occupancy, duty suspended, releases and Douane holds above a status-coloured 3D floor plan and a bond ledger listing twelve zones." loading="eager" decoding="async" />
+              </div>
+              <figcaption class="shot-caption">
+                <div class="shot-caption-head"><span class="shot-no" aria-hidden="true">01</span><div><span class="shot-kicker">HALL OVERVIEW</span><h3>The whole floor, before the first click.</h3></div></div>
+                <p>Occupancy, duty suspended, releases and open holds sit above a status-coloured floor plan. The bond ledger keeps all twelve zones in the same frame, so a reviewer starts with the floor — not a spreadsheet.</p>
+                <div class="shot-stats"><span><b>27,910</b> pallets tracked</span><span><b>€21.84M</b> duty suspended</span><span><b>740</b> pallets on hold</span></div>
+              </figcaption>
+            </figure>
+
+            <div class="demo-pair">
+              <figure class="demo-shot" data-reveal>
+                <div class="shot-frame">
+                  <div class="shot-bar"><span class="shot-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="shot-bar-label">AMSTERDAM FREIGHT · ZONE DETAIL</span><span class="shot-bar-tag">VIEW 02</span></div>
+                  <img src="/examples/amsterdam-02-zone.png" width="1917" height="816" alt="Amsterdam Freight zone view: the WN-01 Bordeaux and Grand Cru Cellar selected on the 3D floor, with pallet mix, temperature, duty position and four pallet lots in the side panel." loading="lazy" decoding="async" />
                 </div>
-                <div class="warehouse-preview-footer"><span><i></i> Illustrative floor view · no live ledger or warehouse connection</span><span>PW / CONCEPT 01</span></div>
-              </div>
-              <div class="showcase-card-copy">
-                <p class="showcase-card-kicker">01 / BONDED WAREHOUSE CONCEPT</p>
-                <h3>See the hold before it becomes a hunt.</h3>
-                <p>A status-aware floor view can bring location, duty state, document context, and exception review together. The display is a concept—not the source demo’s live screen.</p>
-                <div class="showcase-flow"><span>Zone</span><i aria-hidden="true">→</i><span>Status + records</span><i aria-hidden="true">→</i><span>Human resolves</span></div>
-                <p class="showcase-disclaimer">Illustrative reconstruction based on a concept workflow. No live system, client operation, or measured result is shown.</p>
-              </div>
-            </article>
-
-            <article class="showcase-card" data-reveal>
-              <figure class="port-preview">
-                <div class="port-preview-label"><span>PORT DESK · CONCEPT 02</span><span>ANONYMIZED MAP VIEW</span></div>
-                <img src="/manus-storage/port-map-concept-clean_6c91e6b7.webp" alt="An anonymized map crop from a port-operations prototype, showing Rotterdam-area markers, port labels, and illustrative map-pin sizing." loading="lazy" decoding="async" />
-                <figcaption>Map view: Leaflet; tiles © Esri, HERE, Garmin; © OpenStreetMap contributors. This cropped prototype map is illustrative; marker labels are not Proofline client results.</figcaption>
+                <figcaption class="shot-caption">
+                  <div class="shot-caption-head"><span class="shot-no" aria-hidden="true">02</span><div><span class="shot-kicker">ZONE DETAIL</span><h3>From the floor to the pallet lot.</h3></div></div>
+                  <p>Select a cellar and its climate reading, duty position and pallet mix open beside the floor. Each lot keeps its own status, so the review starts with the record that needs a decision.</p>
+                </figcaption>
               </figure>
-              <div class="showcase-card-copy">
-                <p class="showcase-card-kicker">02 / PORT OPERATIONS CONCEPT</p>
-                <h3>From a message to a shared port view.</h3>
-                <p>An inbound shipment note can be parsed into key details, drafted as a route/map suggestion, and confirmed by a person before it joins the operational board.</p>
-                <div class="showcase-flow"><span>Inbound email</span><i aria-hidden="true">→</i><span>AI drafts a pin</span><i aria-hidden="true">→</i><span>Person confirms</span></div>
-                <p class="showcase-disclaimer">The crop excludes the prototype’s branded header, inbox, summary metrics, and ship-detail popups. It is an anonymized prototype image, not a client deployment or performance claim.</p>
-              </div>
-            </article>
+              <figure class="demo-shot" data-reveal>
+                <div class="shot-frame">
+                  <div class="shot-bar"><span class="shot-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="shot-bar-label">AMSTERDAM FREIGHT · DOUANE HOLD BAY</span><span class="shot-bar-tag">VIEW 03</span></div>
+                  <img src="/examples/amsterdam-03-hold.png" width="1875" height="802" alt="Amsterdam Freight Douane hold bay: QR-01 quarantine zone selected on the floor, with a Tanqueray London Dry Gin lot, a sampling alert and four open documents in the side panel." loading="lazy" decoding="async" />
+                </div>
+                <figcaption class="shot-caption">
+                  <div class="shot-caption-head"><span class="shot-no" aria-hidden="true">03</span><div><span class="shot-kicker">DOUANE HOLD BAY</span><h3>Exceptions keep their paperwork.</h3></div></div>
+                  <p>The hold bay shows why a lot is stopped: a sampling discrepancy against the e-AD, the open documents, the excise at stake. A person releases it — the view just makes the decision legible.</p>
+                </figcaption>
+              </figure>
+            </div>
           </div>
 
-          <div class="personalized-demo-band" id="personalized-demo">
-            <div><p class="section-index">YOUR WORKFLOW / NEXT</p><h3>When you reach out, the demo starts with <em>your process.</em></h3><p>We map the people, systems, handoffs, exceptions, and decisions that matter—then shape a fully personalized walkthrough before discussing a build.</p></div>
-            <a class="button button-primary" href="#approach">See how the work is shaped <span aria-hidden="true">↘</span></a>
+          <div class="demo-flow" data-reveal>
+            <span class="demo-flow-label">THE FLOW</span>
+            <div class="demo-flow-track"><span>Floor</span><i aria-hidden="true">→</i><span>Zone</span><i aria-hidden="true">→</i><span>Pallet lot</span><i aria-hidden="true">→</i><span class="demo-gate">Release decision</span></div>
+            <p>Human release stays with the bonded-site team.</p>
           </div>
+          <p class="demo-disclaimer">Example build with synthetic warehouse data. Not a client deployment or a measured result.</p>
         </div>
       </section>
 
-      <section class="impact-section" id="impact" aria-labelledby="impact-title">
-        <div class="impact-orbit impact-orbit-one" aria-hidden="true"></div><div class="impact-orbit impact-orbit-two" aria-hidden="true"></div>
-        <div class="impact-inner section-shell">
-          <div class="impact-heading">
-            <p class="section-index section-index-light">04 <span>/</span> PEOPLE + AI IN SYMPHONY</p>
-            <h2 id="impact-title">AI handles the repeat.<br /><em>People keep the call.</em></h2>
-            <p>Move routine information work forward. Keep the judgment, approvals, and accountability visible.</p>
+      <section class="demo-section demo-kopf" id="kopf-demo" aria-labelledby="kopf-title">
+        <div class="demo-atmosphere" aria-hidden="true"><span class="demo-ghost">02</span></div>
+        <div class="demo-inner section-shell">
+          <header class="demo-heading">
+            <div class="demo-heading-main">
+              <p class="section-index section-index-dark">03 <span>/</span> EXAMPLE BUILDS</p>
+              <div class="demo-tags"><span class="demo-tag">DEMO 02</span><span class="demo-tag demo-tag-quiet">PORT OPERATIONS · FREIGHT FORWARDING</span></div>
+              <h2 id="kopf-title">Every shipment.<br /><em>One moving map.</em></h2>
+            </div>
+            <div class="demo-heading-side">
+              <p>Kopf-Lubben is a port-operations concept. An inbox and a live map turn a shipment note into a pin, a status and a next action — without losing the vessel, the terminal or the person who owns it.</p>
+              <div class="demo-meta"><span>3 views</span><span>Synthetic data</span><span>Built by the Proofline Works team</span></div>
+            </div>
+          </header>
+
+          <figure class="demo-shot demo-shot-lead" data-reveal>
+            <div class="shot-frame">
+              <div class="shot-bar"><span class="shot-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="shot-bar-label">KOPF-LUBBEN · INBOX + PORT MAP</span><span class="shot-bar-tag">VIEW 01</span></div>
+              <img src="/examples/kopf-01-inbox-map.png" width="1917" height="805" alt="Kopf-Lubben port desk: a six-item shipment inbox beside a Rotterdam-area map with volume-sized pins, live-vessel markers, mode filters and a pin-size legend." loading="lazy" decoding="async" />
+            </div>
+            <figcaption class="shot-caption">
+              <div class="shot-caption-head"><span class="shot-no" aria-hidden="true">01</span><div><span class="shot-kicker">INBOX + PORT MAP</span><h3>The inbox and the map, in one desk.</h3></div></div>
+              <p>Fourteen live shipments sit on the map; six sit in the inbox. Pins are sized by volume, pulsed when something needs attention, and filtered by mode — sea, air, road or barge.</p>
+              <div class="shot-stats"><span><b>14</b> on the map</span><span><b>6</b> in the inbox</span><span><b>5</b> live vessels</span></div>
+            </figcaption>
+          </figure>
+
+          <div class="demo-zigzag">
+            <figure class="demo-row" data-reveal>
+              <div class="demo-row-media">
+                <div class="shot-frame">
+                  <div class="shot-bar"><span class="shot-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="shot-bar-label">KOPF-LUBBEN · WAALHAVEN ZOOM</span><span class="shot-bar-tag">VIEW 02</span></div>
+                  <img src="/examples/kopf-02-waalhaven.png" width="1917" height="797" alt="Kopf-Lubben port map zoomed to Waalhaven and Botlek, with live vessels, terminal labels and volume-sized shipment pins." loading="lazy" decoding="async" />
+                </div>
+              </div>
+              <figcaption class="demo-row-copy">
+                <span class="shot-no" aria-hidden="true">02</span>
+                <span class="shot-kicker">WAALHAVEN ZOOM</span>
+                <h3>From the whole port to one basin.</h3>
+                <p>Zoom into Waalhaven and the live vessels, terminal markers and volume-sized pins stay in context. The desk moves from port scale to berth scale without changing tools.</p>
+              </figcaption>
+            </figure>
+
+            <figure class="demo-row demo-row-reverse" data-reveal>
+              <div class="demo-row-media">
+                <div class="shot-frame">
+                  <div class="shot-bar"><span class="shot-dots" aria-hidden="true"><i></i><i></i><i></i></span><span class="shot-bar-label">KOPF-LUBBEN · SHIPMENT CARD</span><span class="shot-bar-tag">VIEW 03</span></div>
+                  <img src="/examples/kopf-03-shipment.png" width="1916" height="796" alt="Kopf-Lubben shipment card for Sol Fruits España: customs-hold status, reefer temperature, terminal, vessel, route, next action and a Cleared button beside the map." loading="lazy" decoding="async" />
+                </div>
+              </div>
+              <figcaption class="demo-row-copy">
+                <span class="shot-no" aria-hidden="true">03</span>
+                <span class="shot-kicker">SHIPMENT CARD</span>
+                <h3>The next action, already framed.</h3>
+                <p>Open a shipment and the status, temperature, terminal, vessel, route and the exact next step sit beside the map. The action is assigned to a person on the desk — not buried in a thread.</p>
+              </figcaption>
+            </figure>
           </div>
 
-          <div class="impact-main">
-            <div class="impact-diagram" data-reveal>
-              <div class="impact-panel-heading"><span>FROM FIRST SIGNAL TO ACCOUNTABLE ACTION</span><span class="impact-panel-status"><i></i> HUMAN CHECKPOINT INCLUDED</span></div>
-              <div class="impact-path" role="list" aria-label="Illustrative AI-enabled workflow with human approval">
-                <article class="impact-node impact-node-input" role="listitem"><span>01 / INTAKE</span><strong>Message<br />or document</strong><small>Original context retained</small></article>
-                <div class="impact-connector" aria-hidden="true"><span></span></div>
-                <article class="impact-node impact-node-ai" role="listitem"><span>02 / AI PREPARES</span><strong>Extract · classify<br />draft · suggest</strong><small>Unclear details stay flagged</small></article>
-                <div class="impact-connector impact-connector-gate" aria-hidden="true"><span></span></div>
-                <article class="impact-node impact-node-human" role="listitem"><span>03 / HUMAN GATE</span><strong>Check · approve<br />resolve exception</strong><small>A person owns the decision</small></article>
-                <div class="impact-connector" aria-hidden="true"><span></span></div>
-                <article class="impact-node impact-node-action" role="listitem"><span>04 / NEXT ACTION</span><strong>Route to the<br />right owner</strong><small>Status remains visible</small></article>
-              </div>
-              <div class="impact-responsibilities">
-                <article><span class="responsibility-mark responsibility-ai" aria-hidden="true">A</span><div><b>AI MAY PREPARE</b><p>Intake, extraction, categorization, draft suggestions, and proposed routing.</p></div></article>
-                <article><span class="responsibility-mark responsibility-human" aria-hidden="true">H</span><div><b>PEOPLE REMAIN ACCOUNTABLE</b><p>Exceptions, sensitive approvals, commitments to customers, and final release decisions.</p></div></article>
-              </div>
-              <p class="impact-diagram-note">Illustrative future-state flow. The exact boundary is agreed for each workflow.</p>
+          <div class="demo-flow" data-reveal>
+            <span class="demo-flow-label">THE FLOW</span>
+            <div class="demo-flow-track"><span>Inbox</span><i aria-hidden="true">→</i><span>Map pin</span><i aria-hidden="true">→</i><span>Shipment card</span><i aria-hidden="true">→</i><span class="demo-gate">Next action</span></div>
+            <p>The desk stays in control of the handoff.</p>
+          </div>
+          <p class="demo-disclaimer">Example build with synthetic shipment data. Not a client deployment or a measured result.</p>
+        </div>
+      </section>
+
+      <section class="personalized-band" id="personalized-demo" aria-labelledby="personalized-title">
+        <div class="personalized-band-inner section-shell">
+          <div>
+            <p class="section-index section-index-dark">YOUR WORKFLOW / NEXT</p>
+            <h2 id="personalized-title">When you reach out, the demo starts with <em>your process.</em></h2>
+            <p>We map the people, systems, handoffs, exceptions and decisions that matter — then shape a fully personalized walkthrough before discussing a build.</p>
+          </div>
+          <a class="button button-light" href="#approach">See how the work is shaped <span aria-hidden="true">↘</span></a>
+        </div>
+      </section>
+
+      <section class="business-section" id="impact" aria-labelledby="impact-title">
+        <div class="business-glow" aria-hidden="true"></div>
+        <div class="business-inner section-shell">
+          <div class="business-heading">
+            <div>
+              <p class="section-index section-index-light">04 <span>/</span> THE BUSINESS CASE</p>
+              <h2 id="impact-title">AI handles the repeat.<br /><em>People keep the call.</em></h2>
+            </div>
+            <p>Switch between the two example builds. At the demo’s own volumes, a €10–20k build earns its cost back in months — not years. Every figure is a scenario built from the assumptions shown, not a client result or a quote.</p>
+          </div>
+
+          <div class="case-switcher" role="tablist" aria-label="Choose an example build">
+            <button class="case-tab is-active" id="case-tab-amsterdam" type="button" role="tab" aria-selected="true" aria-controls="case-panel" tabindex="0" data-demo="amsterdam">
+              <span class="case-tab-swatch" aria-hidden="true"></span>
+              <span class="case-tab-copy"><span>DEMO 01</span><strong>Amsterdam Freight</strong><small>Bonded warehouse</small></span>
+              <span class="case-tab-arrow" aria-hidden="true">→</span>
+            </button>
+            <button class="case-tab" id="case-tab-kopf" type="button" role="tab" aria-selected="false" aria-controls="case-panel" tabindex="-1" data-demo="kopf">
+              <span class="case-tab-swatch" aria-hidden="true"></span>
+              <span class="case-tab-copy"><span>DEMO 02</span><strong>Kopf-Lubben</strong><small>Port operations</small></span>
+              <span class="case-tab-arrow" aria-hidden="true">→</span>
+            </button>
+          </div>
+
+          <div class="case-panel" id="case-panel" role="tabpanel" aria-labelledby="case-tab-amsterdam" data-accent="amber">
+            <div class="case-topline">
+              <span id="case-scenario">SCENARIO 01 · AMSTERDAM FREIGHT</span>
+              <span class="case-synthetic"><i aria-hidden="true"></i> SYNTHETIC DEMO DATA</span>
             </div>
 
-            <section class="impact-model" aria-labelledby="impact-model-title" data-reveal>
-              <div class="impact-model-top"><div><p class="impact-model-kicker">A TRANSPARENT SCENARIO</p><h3 id="impact-model-title">Model the capacity.<br /><em>Not a promise.</em></h3></div><span class="model-chip">EDIT THE ASSUMPTIONS</span></div>
-              <p class="impact-model-intro">Starting values below are fictional examples, not Proofline results or industry benchmarks. Change them to explore your own process; nothing is saved or sent.</p>
-              <div class="impact-input-grid">
-                <label class="impact-input-label">Eligible work items / month<input id="impact-volume" type="number" inputmode="numeric" min="0" max="100000" step="50" value="500" /></label>
-                <label class="impact-input-label">Current handling / item (minutes)<input id="impact-manual" type="number" inputmode="decimal" min="0" max="1440" step="1" value="15" /></label>
-                <label class="impact-input-label">Assisted handling, including review (minutes)<input id="impact-assisted" type="number" inputmode="decimal" min="0" max="1440" step="1" value="5" /></label>
-                <label class="impact-input-label">Loaded labor cost / hour (optional)<span class="impact-currency-field"><input id="impact-hourly" type="number" inputmode="decimal" min="0" max="10000" step="1" value="35" /><select id="impact-currency" aria-label="Currency for capacity value"><option value="EUR" selected>EUR</option><option value="USD">USD</option></select></span></label>
+            <div class="case-kpis">
+              <article class="case-kpi case-kpi-main"><span>ANNUAL CAPACITY VALUE</span><strong id="case-value">€33.0k</strong><small id="case-value-note">72.3 h released / month · €38/h loaded cost</small></article>
+              <article class="case-kpi"><span>PAYBACK · €10–20k BUILD</span><strong id="case-payback">3.6–7.3 mo</strong><small>months to earn back the build</small></article>
+              <article class="case-kpi"><span>3-YEAR NET RETURN</span><strong id="case-roi">3.9–8.9×</strong><small>capacity value against the build band</small></article>
+              <article class="case-kpi"><span>HANDLING / ITEM</span><strong id="case-time">11 → 4 min</strong><small>today → with the workflow · review included</small></article>
+            </div>
+
+            <div class="case-grid">
+              <div class="case-chart-card">
+                <div class="case-card-head"><span>12-MONTH CUMULATIVE VALUE</span><span id="case-chart-note">Net of the €10–20k build band</span></div>
+                <div class="case-chart" id="case-chart"></div>
+                <div class="case-legend"><span><i class="case-legend-value"></i> Cumulative value</span><span><i class="case-legend-zero"></i> Break-even</span><b id="case-breakeven">Break-even at 5.5 mo</b></div>
+                <p class="case-chart-note">Monthly value = eligible items × minutes saved ÷ 60 × loaded cost. The line uses the midpoint of the €10–20k build band.</p>
               </div>
-              <div class="impact-adoption-grid">
-                <label class="impact-slider-label"><span>Assumed case share at month 3 <output id="impact-month3-share" for="impact-month3">30%</output></span><input id="impact-month3" type="range" min="0" max="100" step="5" value="30" /></label>
-                <label class="impact-slider-label"><span>Assumed case share at month 6 <output id="impact-month6-share" for="impact-month6">60%</output></span><input id="impact-month6" type="range" min="0" max="100" step="5" value="60" /></label>
+
+              <aside class="case-assumptions" aria-labelledby="case-assumptions-title">
+                <div class="case-card-head"><span id="case-assumptions-title">EDIT THE ASSUMPTIONS</span><button class="case-reset" id="case-reset" type="button">Reset</button></div>
+                <div class="case-inputs">
+                  <label><span id="case-volume-label">Eligible movements / month</span><input id="case-volume" type="number" inputmode="numeric" min="0" max="100000" step="10" value="620" /></label>
+                  <label>Handling today / item (min)<input id="case-manual" type="number" inputmode="decimal" min="0" max="1440" step="1" value="11" /></label>
+                  <label>With the workflow, review included (min)<input id="case-assisted" type="number" inputmode="decimal" min="0" max="1440" step="1" value="4" /></label>
+                  <label>Loaded cost / hour (€)<input id="case-hourly" type="number" inputmode="decimal" min="0" max="10000" step="1" value="38" /></label>
+                </div>
+                <div class="case-build-band"><span>BUILD BAND</span><strong>€10k–€20k</strong><small>Scope follows the process.</small></div>
+                <p class="case-assumption-note">Nothing is saved or sent. Human review is included in the assisted time.</p>
+              </aside>
+            </div>
+
+            <div class="case-lower">
+              <div class="case-scope-card">
+                <div class="case-card-head"><span>WHAT €10–20k BUYS</span><span>ONE BUILD</span></div>
+                <ul class="case-scope-list" id="case-scope-list"></ul>
+                <div class="case-scope-total"><span>BUILD BAND</span><strong>€10k–€20k</strong></div>
               </div>
-              <p class="impact-model-status" id="impact-model-status" aria-live="polite">Assumption-based scenario only. Human review is included in assisted handling time.</p>
-              <div class="impact-results" aria-live="polite" aria-atomic="true">
-                <article class="impact-result-card"><span>MONTH 3 · RUN-RATE</span><strong id="impact-month3-hours">25.0 h / mo</strong><small id="impact-month3-value">€875 / mo potential capacity value</small></article>
-                <article class="impact-result-card impact-result-card-lime"><span>MONTH 6 · RUN-RATE</span><strong id="impact-month6-hours">50.0 h / mo</strong><small id="impact-month6-value">€1,750 / mo potential capacity value</small></article>
+              <div class="case-signals-card">
+                <div class="case-card-head"><span>FROM THE DEMO</span><span id="case-signals-label">AMSTERDAM FREIGHT</span></div>
+                <div class="case-signals" id="case-signals"></div>
+                <div class="case-manual">
+                  <div class="case-manual-head"><span>HANDLING HOURS / YEAR</span><span>Capacity released, not headcount cut</span></div>
+                  <div class="case-manual-row"><span>Today</span><div class="case-manual-track"><i id="case-bar-today"></i></div><b id="case-hours-today">1,364 h</b></div>
+                  <div class="case-manual-row"><span>With workflow</span><div class="case-manual-track case-manual-track-after"><i id="case-bar-after"></i></div><b id="case-hours-after">496 h</b></div>
+                </div>
               </div>
-              <p class="impact-formula">Formula: monthly items × (manual minutes − assisted minutes, including review) × assumed case share ÷ 60. Values are monthly run-rates at each scenario point—not cumulative totals.</p>
-              <p class="impact-model-caveat">Capacity value is not cash saved. The model excludes build and operating cost, exceptions, case mix, rollout effort, and other factors. Real impact needs an agreed baseline and a measured pilot.</p>
-            </section>
+            </div>
+
+            <p class="case-caveat"><b>Scenario, not a quote.</b> Figures are derived from the demo’s example volumes and the assumptions above. They are not client results or a guarantee. Capacity value is not cash saved; the model excludes build cost beyond the stated band, operating cost, exceptions outside the baseline, case mix and rollout effort. Real impact needs an agreed baseline and a measured pilot.</p>
           </div>
 
-          <div class="impact-horizons" data-reveal>
-            <article class="impact-horizon"><span>0–3 MONTHS · MEASURE</span><h3>Baseline → controlled pilot</h3><p>Agree the starting touch time, quality, exception rate, rework, and human sign-off. Compare the pilot to that baseline; timing depends on scope.</p></article>
-            <article class="impact-horizon"><span>3–6 MONTHS · EARN THE NEXT STEP</span><h3>Evidence → refine or expand</h3><p>Keep, change, or extend a workflow only when quality and control hold. Measure where released capacity goes; do not assume it becomes a cash saving.</p></article>
+          <div class="case-horizons">
+            <article class="case-horizon"><span>0–3 MONTHS · MEASURE</span><h3>Baseline → controlled pilot</h3><p>Agree the starting touch time, quality, exception rate, rework and human sign-off. Compare the pilot to that baseline; timing depends on scope.</p></article>
+            <article class="case-horizon"><span>3–6 MONTHS · EARN THE NEXT STEP</span><h3>Evidence → refine or expand</h3><p>Keep, change or extend a workflow only when quality and control hold. Measure where released capacity goes; do not assume it becomes a cash saving.</p></article>
           </div>
         </div>
       </section>
